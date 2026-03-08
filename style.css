@@ -250,11 +250,60 @@ body.loading {
     padding: 0 4%;
 }
 
-.logo {
+.logo-link {
+    display: block;
+    mix-blend-mode: normal;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-icon {
+    height: 45px;
+    width: auto;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-main {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
+    line-height: 1;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.logo-sub {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .logo-icon {
+        height: 35px;
+    }
+
+    .logo-main {
+        font-size: 1.2rem;
+    }
+
+    .logo-sub {
+        font-size: 0.6rem;
+    }
 }
 
 .menu-links {
