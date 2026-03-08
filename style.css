@@ -255,6 +255,11 @@ body.loading {
     mix-blend-mode: normal;
     text-decoration: none;
     color: var(--text-primary);
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
 }
 
 .logo-wrapper {
@@ -264,7 +269,7 @@ body.loading {
 }
 
 .logo-icon {
-    height: 45px;
+    height: 60px;
     width: auto;
 }
 
@@ -276,19 +281,19 @@ body.loading {
 
 .logo-main {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.05em;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
 .logo-sub {
-    font-size: 0.75rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--accent);
-    letter-spacing: 0.15em;
-    margin-top: 2px;
+    letter-spacing: 0.2em;
+    margin-top: 4px;
     text-transform: uppercase;
 }
 
