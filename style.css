@@ -146,8 +146,11 @@ h4 {
 
 @media (max-width: 768px) {
     .loader-text {
-        font-size: 1.8rem;
-        letter-spacing: 0.1em;
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+        letter-spacing: 0.2em;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
     }
 }
 
@@ -598,6 +601,13 @@ body.loading {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 0.8rem 0;
+    }
+
     .section {
         padding: 2.5rem 0;
     }
