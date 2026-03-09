@@ -145,12 +145,12 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    .loader-text {
+    .lt-main {
         font-size: clamp(1.2rem, 6vw, 1.8rem);
-        letter-spacing: 0.15em;
-        width: 100%;
-        text-align: center;
-        padding: 0 20px;
+    }
+
+    .lt-sub {
+        font-size: clamp(0.6rem, 3vw, 0.8rem);
     }
 }
 
@@ -177,25 +177,40 @@ body.loading {
 
 .loader-text {
     font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    color: rgba(255, 255, 255, 0.1);
     position: relative;
-    overflow: hidden;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
-.loader-text::after {
-    content: 'MECHAURA';
+.lt-wrapper {
+    white-space: nowrap;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 0 20px;
+}
+
+.lt-bg {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.lt-reveal {
     position: absolute;
     top: 0;
     left: 0;
-    color: var(--text-primary);
     width: 0%;
+    color: var(--text-primary);
     overflow: hidden;
-    white-space: nowrap;
     animation: fillText 2s ease-in-out forwards;
+}
+
+.lt-main {
+    font-size: 3rem;
+}
+
+.lt-sub {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-left: 0.5rem;
 }
 
 .loader-progress {
