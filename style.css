@@ -146,8 +146,8 @@ h4 {
 
 @media (max-width: 768px) {
     .loader-text {
-        font-size: clamp(1.5rem, 8vw, 2.5rem);
-        letter-spacing: 0.2em;
+        font-size: clamp(1.2rem, 6vw, 1.8rem);
+        letter-spacing: 0.15em;
         width: 100%;
         text-align: center;
         padding: 0 20px;
@@ -427,9 +427,10 @@ body.loading {
 
 .mob-link {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 0.1em;
 }
 
 /* ==========================================================================
