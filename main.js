@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: 'power3.out'
         }, "-=0.4")
         .fromTo('.hero-title',
-            { y: 100, opacity: 0 },
+            { y: 50, opacity: 0 },
             { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
             "-=1"
         )
