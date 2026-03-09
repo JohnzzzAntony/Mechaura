@@ -145,12 +145,24 @@ h4 {
 }
 
 @media (max-width: 768px) {
+    .lt-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+        white-space: normal;
+    }
+
     .lt-main {
-        font-size: clamp(1.2rem, 6vw, 1.8rem);
+        font-size: clamp(1.4rem, 7vw, 2rem);
+        line-height: 1;
     }
 
     .lt-sub {
-        font-size: clamp(0.6rem, 3vw, 0.8rem);
+        font-size: clamp(0.6rem, 3.5vw, 0.8rem);
+        margin-left: 0;
+        letter-spacing: 0.3em;
+        opacity: 0.8;
     }
 }
 
