@@ -190,8 +190,24 @@ body.loading {
 .loader-text {
     font-family: var(--font-heading);
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+.loader-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: logoReveal 1s cubic-bezier(0.7, 0, 0.3, 1) forwards 0.2s;
+}
+
+@keyframes logoReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .lt-wrapper {
