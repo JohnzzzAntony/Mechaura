@@ -144,6 +144,13 @@ h4 {
     }
 }
 
+@media (max-width: 768px) {
+    .loader-text {
+        font-size: 1.8rem;
+        letter-spacing: 0.1em;
+    }
+}
+
 /* ==========================================================================
    Loader
    ========================================================================== */
@@ -202,7 +209,7 @@ body.loading {
     top: 0;
     left: 0;
     height: 100%;
-    width: 0%;
+    width: 100%;
     background: var(--accent);
     animation: fillProgress 2s ease-in-out forwards;
 }
@@ -591,22 +598,26 @@ body.loading {
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding: 2.5rem 0;
+    }
+
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 1.1;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
         word-break: keep-all;
         /* Prevent awkward breaks */
     }
 
     .hero-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         max-width: 100%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.2rem;
     }
 
     .hero-content {
-        padding-top: 60px;
+        padding-top: 40px;
         /* Give room for navbar */
     }
 }
@@ -686,8 +697,19 @@ body.loading {
 
 @media (max-width: 992px) {
     .about-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+        /* Keep 2 cols for desktop feel */
+        gap: 1.5rem;
+    }
+
+    .parallax-img-container {
+        height: 300px;
+        /* Smaller for mobile */
+    }
+
+    .about-desc {
+        font-size: 0.9rem;
+        margin-top: 1rem;
     }
 }
 
