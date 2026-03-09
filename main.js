@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tlLoader.to('.loader', {
         yPercent: -100,
         duration: 0.8,
-        delay: 2.2, // Wait for CSS animations to finish
+        delay: 4.2, // Match the faster 4s CSS animations
         ease: 'power4.inOut'
     })
         // Hero Elements Reveal
